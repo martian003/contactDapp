@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+       
+<title>   contacts Dapp  </title>
+    </head>
+
+        <body style="background-color: aliceblue;">
+            <div  class="col-sm-4"></div>
+            <div class="container col-sm-4">
+                 <center><h2 style="color:white;background-color:orange" >contactDapp</h3>
+
+                <form action= "/insertContact" method="post">
+                    <div class="form-group">
+                        <label style="color:blue"> Contact Name:</label>
+                        <input type="text" class="form-control" name="name" placeholder="enter name"/>
+
+                    </div>
+                    <div class="form-group">
+                        <label style="color:blue">Contact Number:</label>
+                        <input type="text" class="form-control" name="mobile" placeholder="enter mobile number"/>
+                    </div>
+                       <div class="form-group">
+                        <label style="color:blue"> Email Id:</label>
+                        <input type="text" class="form-control" name="email" placeholder="enter email id"/>
+                       </div>
+                    <div class="form-group">
+                        <label style="color:blue">Organization:</label>
+                        <input type="text" class="form-control" name="org" placeholder="enter organization"/>
+                    </div>
+                    <button class=btn "btn-primary" type="Submit">Insert contact</button>  
+                </form>
+            <br/>
+                <span style="color:red">({error})</span> 
+                <span style="color:green">({res})</span> 
+            </center>
+            </div>
+            <div class="col-sm-4"></div>
+
+
+
+        </body>
+        </html>
+
